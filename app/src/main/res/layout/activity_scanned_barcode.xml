@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScannedBarcodeActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtBarcodeValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="No Barcode Detected"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:layout_below="@+id/txtBarcodeValue"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/txtContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact No:"
+            android:layout_below="@+id/txtName"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/txtLocationFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location From:"
+            android:layout_below="@+id/txtContact"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/txtLocationTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location To:"
+            android:layout_below="@+id/txtLocationFrom"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_launcher"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <SurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+</LinearLayout>
